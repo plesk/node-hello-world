@@ -6,15 +6,15 @@ pipeline:
   beanstalk:
     image: pelotech/drone-elastic-beanstalk
     access_key:
-      from_secret: access_key
+      from_secret: aws_access_key_id
     secret_key:
-      from_secret: secret_key
+      from_secret: aws_secret_access_key
     region: ap-southeast-1
     application: drone-test
     version_label: v1
     description: Deployed with DroneCI
     bucket_name: drone-test-1
     bucket_key:
-      from_secret: bucket_key
+      from_secret: aws_access_key_id
     update_environment: true
     environment_name: DroneTest-env
