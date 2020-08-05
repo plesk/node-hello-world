@@ -14,7 +14,7 @@ pipeline:
     version_label: v1
     description: Deployed with DroneCI
     bucket: drone-test-1
-    bucket-key: v1.zip
-      # from_secret: aws_access_key_id
+    bucket-key:
+      from_secret: aws_access_key_id
     update_environment: true
     environment_name: DroneTest-env
