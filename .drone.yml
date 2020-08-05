@@ -13,8 +13,8 @@ pipeline:
     application: drone-test
     version_label: v1
     description: Deployed with DroneCI
-    bucket_name: drone-test-1
+    bucket: drone-test-1
     bucket_key:
-      # from_secret: aws_access_key_id
+      from_secret: aws_access_key_id
     update_environment: true
     environment_name: DroneTest-env
