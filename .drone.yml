@@ -16,4 +16,5 @@ pipeline:
     bucket_name: drone-test-1
     bucket_key:
       from_secret: bucket_key
+    update_environment: true
     environment_name: DroneTest-env
