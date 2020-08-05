@@ -10,7 +10,7 @@ pipeline:
     secret_key:
       from_secret: secret_key
     region: ap-southeast-2
-    application: drone-ci-tester
+    application: drone-test
     version_label: v1
     auto_create: true
     description: Deployed with DroneCI
