@@ -9,10 +9,10 @@ pipeline:
       from_secret: access_key
     secret_key:
       from_secret: secret_key
-    region: ap-southeast-2
+    region: ap-southeast-1
     application: drone-test
     version_label: v1
-    auto_create: true
+    auto_create: false
     description: Deployed with DroneCI
     bucket_name: drone-test-1
     bucket_key:
