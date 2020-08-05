@@ -6,9 +6,9 @@ pipeline:
   beanstalk:
     image: pelotech/drone-elastic-beanstalk
     access_key:
-      from_secret: aws_access_key_id
+      from_secret: aws_access_key
     secret_key:
-      from_secret: aws_secret_access_key
+      from_secret: aws_secret_key
     region: ap-southeast-1
     application: drone-test
     version_label: v1
