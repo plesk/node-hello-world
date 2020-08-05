@@ -12,7 +12,6 @@ pipeline:
     region: ap-southeast-1
     application: drone-test
     version_label: v1
-    auto_create: false
     description: Deployed with DroneCI
     bucket_name: drone-test-1
     bucket_key:
